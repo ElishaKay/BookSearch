@@ -1,0 +1,185 @@
+<html>
+<head>
+	<title>Week 2 - Day 2</title>
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+	<script src="node_modules/handlebars/dist/handlebars.js"></script>	
+</head>
+<body>
+	<!-- <nav class="navbar navbar-default navbar-fixed-top">
+</nav> -->
+
+	<div class="col-md-4 box">
+
+			<span class="Bookicon">BookLook
+				<i class="fa fa-book" aria-hidden="true"></i>
+			</span>
+			<h1 class="Bookinfotext">Enter Book Info</h1>
+			<form>
+				<div class="form-group">
+					<label class="fieldstext" for="email">Book Title:</label>
+					<input placeholder="Book Title" id="booktitle" class="form-control" id="booktitle">
+				</div>
+				<div class="form-group">
+					<label class="fieldstext" for="email">Book Author:</label>
+					<input placeholder="Book Author" id="bookauthor" class="form-control" id="pwd">
+				</div>
+				<div class="form-group">
+					<label class="fieldstext" for="email">Book Description:</label>
+					<input placeholder="Book Description" id="bookdescription" class="form-control" id="email">
+				</div>
+				<div class="form-group">
+					<label class="fieldstext" for="email">Image URL:</label>
+					<input placeholder="Image URL" class="form-control" id="email">
+				</div>
+				<div class="form-group">
+					<label class="fieldstext" for="email">Number of Pages:</label>
+					<input type="number" placeholder="Number of Pages" class="form-control" id="ppb">
+				</div>
+				<div class="form-group">
+					<label class="fieldstext" for="email">Minutes You Read Per Day:</label>
+					<input type="number" placeholder="Minutes You Read Per Day" class="form-control" id="mpd">
+				</div>				
+				<div class="checkbox">
+					<label><input type="checkbox"> Remember me</label>
+				</div>
+				<button type="submit" class="btn btn-default" id="finalClick">Submit</button>
+			</form>
+			<p class="text-muted"><div class="candy"></div>
+
+				<script>
+
+			</script></p>
+
+		</div>
+
+
+
+
+
+ <header>
+
+ 	<div class="container">
+    <div class="intro-text">
+
+    	<script id="books-template" type="text/x-handlebars-template">
+    	
+    	{{#each books}}
+    	<p>This book will take you {{time}} days to read</p>
+    	<h2 class="Bookinfotext">{{name}}</h2>
+    	<p class="fieldstext">{{description}}</p>
+    	<span><a href="{{link}}"></a></li>
+    	<img src="{{img}}">
+    	</span>
+    	
+    	{{/each}}
+    	
+    	</script>
+
+    	<div class="books">
+    	</div>      
+
+    <!--   <div class="intro-lead-in">Welcome to my site! What's your name?</div> <button>Submit</button>
+      <input type="text" id="my-input" placeholder="Some Text!"></input>
+      <div class="intro-heading">It's Nice To Meet You</div>
+      <button class="btn btn-success">Tell Me More</button>
+     -->
+
+    </div>
+  </div>
+
+  </header>
+
+<i class="fa fa-address-book-o" aria-hidden="true"></i>
+
+<div class="container">
+	<div class="row text-center">
+		<div class="col-md-4 box">
+			<span class="fa-stack fa-4x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+			</span>
+			<h4>E-Commerce</h4>
+			<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+		</div>
+
+
+		<div class="col-md-4 box">
+
+			<span class="fa-stack fa-4x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+			</span>
+			<h4>Responsive Design</h4>
+			<p class="text-muted"><div class="candy"></div>
+
+				<script>
+
+			</script></p>
+
+		</div>
+		<div class="col-md-4 box">
+
+			<span class="fa-stack fa-4x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+			</span>
+			<h4>Web Security</h4>
+			<p class="text-muted"><div class="candy"></div>
+
+				<script>
+				$('.candy').append('<span>Chocolate</span>');
+
+				$('.candy').find('span').remove();
+			</script></p>
+
+
+		</div>
+	</div>
+
+  <div class="row">
+    <div class="col-sm-4 box"></div>
+    <div class="col-sm-4 box"></div>
+    <div class="col-sm-4 box"></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+
+		<h1 class="text-center col-md-12">Services</h1>
+ 			<h5 class="text-center col-md-12">Services Subtitle</h5>
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+</section>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8"><p>.col-md-8 To summarize, Bootstrap built it's grid based off of a "12-column grid" (like we did with ours). The rest can be summed up by these 3 bullets:
+
+Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.
+Use rows to create horizontal groups of columns.
+Content should be placed within columns, and only columns may be immediate children of rows.</p></div>
+    <div class="col-md-4">.col-md-4  To summarize, Bootstrap built it's grid based off of a "12-column grid" (like we did with ours). The rest can be summed up by these 3 bullets:
+
+Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.
+Use rows to create horizontal groups of columns.
+Content should be placed within columns, and only columns may be immediate children of rows.</div>
+  </div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
